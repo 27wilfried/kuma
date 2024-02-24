@@ -1,0 +1,22 @@
+.login-form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(20, 200, 20, 0.8) 0%, rgb(112, 241, 108) 50%, rgba(231, 245, 231, 0.8) 100%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.flag-icon {
+    width: 30px;
+    margin-right: 10px;
+}
