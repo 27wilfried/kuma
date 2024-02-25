@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Auth\LoginController;
 
 
 /*
@@ -18,6 +19,10 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::resource('admin/product', ProductController::class);
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+
+
 
 /*Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::resource('property', \App\Http\Controllers\Admin\PropertyController::class)->except(['show']);

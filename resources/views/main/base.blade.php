@@ -58,6 +58,8 @@
                         <a href="{% url 'index' %}" class="nav-item nav-link active">Boutique</a>
                         <a href="{% url 'shop' %}" class="nav-item nav-link">Discussion</a>
                         <a href="contact.html" class="nav-item nav-link">A Propos</a>
+                        <a href="{{ route('login') }}" class="nav-item nav-link">Admin Login</a>
+
                     </div>
                     <div class="d-flex m-3 me-0">
                         <button
